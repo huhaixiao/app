@@ -1,16 +1,15 @@
 import * as React from "react";
-import { HashRouter, Routes, Route } from "react-router-dom";
-import { About, Home, Collection } from "./pages/";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home, Collection } from "./pages/";
 
 const App = () => {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
         <Route path="collection" element={<Collection />} />
       </Routes>
-    </HashRouter>
+    </BrowserRouter>
   );
 };
 
