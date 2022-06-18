@@ -1,12 +1,17 @@
-import "./styles.css";
-import { Page } from "./pages/";
+import * as React from "react";
+import { HashRouter, Routes, Route } from "react-router-dom";
+import { About, Home, Collection } from "./pages/";
 
-export default function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      <Page />
-    </div>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="collection" element={<Collection />} />
+      </Routes>
+    </HashRouter>
   );
-}
+};
+
+export default App;
