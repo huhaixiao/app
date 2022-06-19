@@ -1,15 +1,21 @@
-import * as React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import styled from "styled-components";
 import { Home, Collection } from "./pages/";
+
+const RoutersContainer = styled.div`
+  padding: 24px;
+`;
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="collection" element={<Collection />} />
-      </Routes>
-    </BrowserRouter>
+    <RoutersContainer>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="collection" element={<Collection />} />
+        </Routes>
+      </BrowserRouter>
+    </RoutersContainer>
   );
 };
 
