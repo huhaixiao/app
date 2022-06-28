@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link } from 'react-router-dom';
 
 export default () => {
   return (
@@ -6,6 +6,8 @@ export default () => {
       <Link to="/collection">Collection</Link>
       <hr />
       <Link to="/components">Components</Link>
+      <hr />
+      <Link to="/learn-form">learn-form</Link>
     </nav>
   );
 };

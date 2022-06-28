@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import styled from 'styled-components';
-import { Home, Collection, Components } from './pages/';
+import { Home, Collection, Components, Form } from './pages/';
 
 const RoutersContainer = styled.div`
   /* padding: 24px; */
@@ -14,6 +14,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="collection" element={<Collection />} />
           <Route path="components" element={<Components />} />
+          <Route path="learn-form" element={<Form />} />
         </Routes>
       </BrowserRouter>
     </RoutersContainer>

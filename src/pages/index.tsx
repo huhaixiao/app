@@ -1,3 +1,4 @@
-export { default as Home } from "./home";
-export { default as Collection } from "./collection";
-export { default as Components } from "./components";
+export { default as Home } from './home';
+export { default as Collection } from './collection';
+export { default as Components } from './components';
+export { default as Form } from './form/';
