@@ -1,9 +1,9 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import styled from "styled-components";
-import { Home, Collection } from "./pages/";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import styled from 'styled-components';
+import { Home, Collection, Components } from './pages/';
 
 const RoutersContainer = styled.div`
-  padding: 24px;
+  /* padding: 24px; */
 `;
 
 const App = () => {
@@ -13,6 +13,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="collection" element={<Collection />} />
+          <Route path="components" element={<Components />} />
         </Routes>
       </BrowserRouter>
     </RoutersContainer>

@@ -4,6 +4,8 @@ export default () => {
   return (
     <nav>
       <Link to="/collection">Collection</Link>
+      <hr />
+      <Link to="/components">Components</Link>
     </nav>
   );
 };
