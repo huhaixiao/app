@@ -4,6 +4,7 @@ import { useDrag, useWheel } from '@use-gesture/react';
 import type { FullGestureState } from '@use-gesture/core/src/types/state';
 import { clamp } from 'lodash';
 import styled from 'styled-components';
+import classname from 'classnames';
 import { rubberbandIfOutOfBounds } from './utils';
 import type { PickerColumnItem, PickerValue } from './types';
 
@@ -44,6 +45,11 @@ const Container = styled.div<{ itemHeight: number }>`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    &.selected {
+      color: #171a20;
+      font-weight: 500;
+    }
 
     &-label {
       overflow: hidden;
@@ -119,7 +125,11 @@ export const Wheel = ({
     if (isDraggingRef.current) return;
     if (value) {
       const targetIndex = column.findIndex(item => item.value === value);
-      scrollSelect(targetIndex, true);
+      if (targetIndex !== -1) {
+        scrollSelect(targetIndex, true);
+      } else {
+        scrollSelect(column.length - 1, true);
+      }
     } else {
       scrollSelect(0, true);
     }
@@ -168,7 +178,9 @@ export const Wheel = ({
             <Item
               itemHeight={itemHeight}
               key={item.value}
-              className={`${classPrefix}-item`}
+              className={classname(`${classPrefix}-item`, {
+                selected: item.value === value
+              })}
               onClick={handleClick}>
               <Label>{renderLabel(item)}</Label>
             </Item>
