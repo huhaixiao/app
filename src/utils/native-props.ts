@@ -2,18 +2,6 @@ import React from 'react';
 import type { CSSProperties, ReactElement } from 'react';
 import classNames from 'classnames';
 
-// WTF
-// <S extends string = never>
-/**
-
-export type NativeProps<S extends string = never> = {
-  className?: string
-  style?: CSSProperties & Partial<Record<S, string>>
-  tabIndex?: number
-} & AriaAttributes
-
- */
-
 type NativeProps = {
   className?: string;
   style?: CSSProperties;

@@ -1,17 +1,8 @@
-# app
-
-Created with CodeSandbox
-
-- [ ] pages/collections
+- [ ] `<S extends string = never>`
+- [ ] onxxx & addEventListener('xxx') 区别
 
 - elasticity
-
-# ts
-
 - any: skip type check
 - unknown: any type derives from unknown
 - never: throw error
-
-# npm packages
-
 - `react-is`
