@@ -1,14 +1,19 @@
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet, Link } from 'react-router-dom';
+import styled from 'styled-components';
 
+const AppContainer = styled.div``;
+
+/**
+ * @deprecated
+ * <a href="https://www.baidu.com/" target="_blank" rel="noreferrer">
+ */
 export const Home = () => {
   return (
-    <div>
-      <nav>
-        <Link to="/collection">Collection</Link>
-      </nav>
-      <hr />
+    <AppContainer>
+      <h1>Home</h1>
+      <Link to="components">components</Link>
       <Outlet />
-    </div>
+    </AppContainer>
   );
 };
 

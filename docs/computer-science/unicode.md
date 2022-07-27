@@ -1,0 +1,2 @@
+- CJK China Japan Korean 基本集 4e00 - 9fa5
+- 中文 unicode 范围 `[\u4e00-\u9fa5]`

@@ -1,8 +1,11 @@
-- [ ] `<S extends string = never>`
-- [ ] onxxx & addEventListener('xxx') 区别
+# todo
 
-- elasticity
-- any: skip type check
-- unknown: any type derives from unknown
-- never: throw error
-- `react-is`
+- [ ] `<S extends string = never>`
+- [ ] onxxx & addEventListener('xxx')
+- [ ] `react-is`
+
+# ref
+
+- [csb Demo](https://m05hfn.csb.app/)
+- [Bulletproff React](https://github.com/alan2207/bulletproof-react)
+- [Day.js](https://day.js.org/)
