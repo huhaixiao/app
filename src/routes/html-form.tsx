@@ -1,5 +1,5 @@
 /**
- * https://developer.mozilla.org/en-US/docs/Learn/Forms
+ * @see https://developer.mozilla.org/en-US/docs/Learn/Forms
  * https://developer.mozilla.org/en-US/docs/Learn/Forms/How_to_structure_a_web_form
  * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form#see_also
  * adm

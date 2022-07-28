@@ -12,9 +12,8 @@ import styled from 'styled-components';
 import { setupBodyColorScheme } from './utils/dark-mode';
 import { Components } from './components';
 import { Demo as PickerViewDemo } from './components/picker-view';
-import Libs from './libs/';
-import Antd from './libs/antd/';
-import FormPage from './libs/antd/form';
+import Libs from './routes/libs/';
+import Ahooks from './routes/libs/ahooks';
 
 const StyledNav = styled.nav`
   display: flex;
@@ -39,19 +38,17 @@ root.render(
           element={
             <>
               <StyledNav>
-                <Link to="components">components</Link>
                 <Link to="libs">libs</Link>
+                <Link to="components">components</Link>
               </StyledNav>
               <Outlet />
             </>
           }>
+          <Route path="libs" element={<Libs />}>
+            <Route path="ahooks" element={<Ahooks />} />
+          </Route>
           <Route path="components" element={<Components />}>
             <Route path="picker-view" element={<PickerViewDemo />} />
-          </Route>
-          <Route path="libs" element={<Libs />}>
-            <Route path="antd" element={<Antd />}>
-              <Route path="form" element={<FormPage />} />
-            </Route>
           </Route>
         </Route>
       </Routes>
