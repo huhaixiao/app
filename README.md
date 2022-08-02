@@ -3,14 +3,14 @@
 - [ ] `<S extends string = never>`
 - [ ] onxxx & addEventListener('xxx')
 - [ ] `react-is`
+- [ ] happy path
+- [ ] 图灵完备
 
 # ref
 
 - [csb Demo](https://m05hfn.csb.app/)
 - [Day.js](https://day.js.org/)
-
-# Bulletproof React
-
+- [codepen](https://codepen.io/)
 - [Bulletproff React](https://github.com/alan2207/bulletproof-react)
 
 ## 🗄️ Project Structure
