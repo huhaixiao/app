@@ -1,3 +1,7 @@
+- proportionally
+- implicit
+- explicit
+
 1. https://www.merriam-webster.com/
 1. ·
 1. day

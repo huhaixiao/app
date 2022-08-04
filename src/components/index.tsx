@@ -6,6 +6,8 @@ export const Components = () => {
       <h1>Components</h1>
       <nav>
         <Link to="picker-view">PickerView</Link>
+        <br/>
+        <Link to="waterfall">waterfall</Link>
       </nav>
       <Outlet />
     </>

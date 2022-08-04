@@ -14,6 +14,8 @@ import { Components } from './components';
 import { Demo as PickerViewDemo } from './components/picker-view';
 import Libs from './routes/libs/';
 import Ahooks from './routes/libs/ahooks';
+import CSSLayout from './routes/css/layout';
+import Waterfall from './components/waterfall'
 
 const StyledNav = styled.nav`
   display: flex;
@@ -40,6 +42,7 @@ root.render(
               <StyledNav>
                 <Link to="libs">libs</Link>
                 <Link to="components">components</Link>
+                <Link to="css/layout">css/layout</Link>
               </StyledNav>
               <Outlet />
             </>
@@ -49,7 +52,9 @@ root.render(
           </Route>
           <Route path="components" element={<Components />}>
             <Route path="picker-view" element={<PickerViewDemo />} />
+            <Route path="waterfall" element={<Waterfall />} />
           </Route>
+          <Route path="css/layout" element={<CSSLayout />} />
         </Route>
       </Routes>
     </Router>
