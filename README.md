@@ -6,6 +6,10 @@
 - [ ] happy path
 - [ ] 图灵完备
 
+# utils
+
+- [Create React App](https://create-react-app.dev/)
+
 # ref
 
 - [掘金网页 Dashboard](https://e.juejin.cn/#/)
@@ -17,6 +21,12 @@
 - [css grid-auto-rows](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-auto-rows)
 - [css fit-content](https://developer.mozilla.org/en-US/docs/Web/CSS/fit-content_function)
 - [codepen waterfall](https://codepen.io/ycw/pen/gdGBPx)
+- [requestIdleCallback](https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback)
+
+# packages
+
+- [prettier-plugin-import-sort](https://www.npmjs.com/package/prettier-plugin-import-sort)
+- [rc-form](https://vscode.dev/github/react-component/field-form)
 
 ```css
 .waterfall {
@@ -41,3 +51,16 @@
   grid-row: auto / span 8;
 }
 ```
+
+# npm
+
+## packages
+
+- antd
+- classnames
+
+## cli
+
+- `npm view <package>`
+- `npm view <package> version`
+- `npm view <package> versions`

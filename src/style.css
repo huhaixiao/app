@@ -1,0 +1,6 @@
+/*
+ -webkit-scrollbar style
+*/
+::-webkit-scrollbar {
+  display: none;
+}

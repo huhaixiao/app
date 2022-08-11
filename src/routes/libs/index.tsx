@@ -1,18 +1,13 @@
-import { Outlet, Link } from 'react-router-dom';
+import { Route } from 'react-router-dom';
+import Nav from './nav';
+import Ahooks from './ahooks';
+import ReactSortableHoc from './react-sortable-hoc';
 
-/**
- * @see https://ant.design/
- * @see https://pro.ant.design/
- * @see https://procomponents.ant.design/
- * @see https://mobile.ant.design/
- */
 export default () => {
   return (
-    <>
-      <nav>
-        <Link to="ahooks">ahooks</Link>
-      </nav>
-      <Outlet />
-    </>
+    <Route path="libs" element={<Nav />}>
+      <Route path="ahooks" element={<Ahooks />} />
+      <Route path="react-sortable-hoc" element={<ReactSortableHoc />} />
+    </Route>
   );
 };
