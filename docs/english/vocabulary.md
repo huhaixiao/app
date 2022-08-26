@@ -1,6 +1,26 @@
+- isomorphic
+
+- analog
+- digital
+
+- prize
+- award
+- reward
+- trophy
+
 - proportionally
 - implicit
 - explicit
+- regression
+- logistic
+- bulk
+- riddled
+- transport
+- analogy
+- ArtDeco
+- Victorian
+- respective
+- GUI Graphical User Interface
 
 1. https://www.merriam-webster.com/
 1. ·

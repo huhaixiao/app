@@ -11,4 +11,10 @@
 # extensions
 
 - Prettier
+- Stylelint
+- ESLint
 - Live Server
+- Code Runner
+- GitLens
+- Git History
+- Markdown All in One

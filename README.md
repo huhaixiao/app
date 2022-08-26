@@ -5,10 +5,13 @@
 - [ ] `react-is`
 - [ ] happy path
 - [ ] 图灵完备
+- [ ] 同构 vs 异构
 
 # utils
 
 - [Create React App](https://create-react-app.dev/)
+- [ahooks](https://ahooks.js.org/)
+- [react spring](https://react-spring.dev/)
 
 # ref
 
@@ -64,3 +67,33 @@
 - `npm view <package>`
 - `npm view <package> version`
 - `npm view <package> versions`
+
+# Bulletproff React
+
+```bash
+src
+|
++-- assets            # assets folder can contain all the static files such as images, fonts, etc.
+|
++-- components        # shared components used across the entire application
+|
++-- config            # all the global configuration, env variables etc. get exported from here and used in the app
+|
++-- features          # feature based modules
+|
++-- hooks             # shared hooks used across the entire application
+|
++-- lib               # re-exporting different libraries preconfigured for the application
+|
++-- providers         # all of the application providers
+|
++-- routes            # routes configuration
+|
++-- stores            # global state stores
+|
++-- test              # test utilities and mock server
+|
++-- types             # base types used across the application
+|
++-- utils             # shared utility functions
+```
